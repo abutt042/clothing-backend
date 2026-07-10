@@ -6,12 +6,11 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "routes/**",
-          "controllers/**"
-          
+          "src/routes/**",
+          "src/controllers/**"
         ]
-  }
-    }
+      }
+}
   ],
   "routes": [
     {

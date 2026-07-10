@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 
 // Routes
-app.use('/api/products', require('../routes/products'));
+app.use('/api/products', require('../src/routes/products'));
 // Health check
 app.get('/health', (req, res) => {
   res.status(200).json({ 
