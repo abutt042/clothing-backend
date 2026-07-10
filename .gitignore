@@ -1,0 +1,26 @@
+# Dependency directories (Never push this; it is too heavy)
+node_modules/
+jspm_packages/
+
+# Environment variables and secrets (Crucial for security)
+.env
+.env.local
+.env.production
+*.env
+
+firebase-credentials.json
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and distribution directories (If using TypeScript/Build tools)
+dist/
+build/
+out/
+
+# Operating system files
+.DS_Store
+Thumbs.db
