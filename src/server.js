@@ -15,6 +15,14 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Root route to fix the Vercel "Page Not Found" 404 landing page
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to the Clothing Backend API!'
+  });
+});
+
 // Routes
 app.use('/api/products', require('./routes/products'));
 
@@ -43,4 +51,4 @@ app.listen(PORT, () => {
   console.log(`📁 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
 
-module.exports = app; 
+module.exports = app;
