@@ -6,19 +6,16 @@ const sampleData = {
       id: 'men',
       name: 'Men',
       subcategories: ['Jeans', 'T-Shirts', 'Polo Shirts', 'Jackets', 'Shorts'],
-      filters: ['colors', 'sizes', 'material']
     },
     {
       id: 'women',
       name: 'Women',
       subcategories: ['Jeans', 'Jackets'],
-      filters: ['colors', 'sizes', 'material']
     },
     {
       id: 'kids',
       name: 'Kids',
       subcategories: ['Jeans', 'T-Shirts', 'Polo Shirts', 'Jackets', 'Shorts'],
-      filters: ['colors', 'sizes', 'material']
     }
   ],
   
@@ -255,11 +252,11 @@ async function seedDatabase() {
     console.log('🌱 Seeding database...');
     
     // Seed categories
-    console.log('📁 Seeding categories...');
-    for (const category of sampleData.categories) {
-      await db.collection(COLLECTIONS.CATEGORIES).doc(category.id).set(category);
-    }
-    console.log('✅ Categories seeded successfully!');
+    // console.log('📁 Seeding categories...');
+    // for (const category of sampleData.categories) {
+    //   await db.collection(COLLECTIONS.CATEGORIES).doc(category.id).set(category);
+    // }
+    // console.log('✅ Categories seeded successfully!');
     
     // Seed products
     console.log('👕 Seeding products...');
